@@ -81,6 +81,8 @@ CMD ["/sbin/my_init"]
 			RUN a2enmod headers
 			RUN a2enmod expires
 			RUN a2enmod rewrite
+			RUN a2enmod ssl
+                        RUN a2enmod proxy_http
 	# PHP
 		# Config
 			# /etc/php5/apache2/php.ini
